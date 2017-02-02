@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'appily works!';
+  yturl = 'appily works!';
+  private urlSubmitted = false;
+
+  onSubmit(): boolean {
+    this.urlSubmitted = true;
+    return false;
+  }
 }

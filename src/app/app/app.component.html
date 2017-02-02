@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit()">
+    <input type="text" name="name" [(ngModel)]="yturl" autofocus>
+    <input type="submit" value="Submit">
+</form>
+<yt-embed *ngIf="urlSubmitted" [url]="yturl"></yt-embed>
